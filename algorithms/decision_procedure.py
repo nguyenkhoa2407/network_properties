@@ -1,7 +1,7 @@
-import sys
 import torch
-
-sys.path.append('/Users/khoanguyen-cp/gmu/Marabou')
+import sys
+sys.path.append('.')
+sys.path.append('..')
 
 from maraboupy import MarabouCore
 from maraboupy.Marabou import createOptions
@@ -18,6 +18,7 @@ class MarabouCoreDP():
   # 4. specification: provided as a list of pairs (mat, rhs), as in: mat * y <= rhs, where y is the output.
   #                   Each element in the list is a term in a disjunction for the specification.
   def solve(self, network_activation, model, input_ranges, specification):
+    print("Initiating input query...")
     inputQuery = MarabouCore.InputQuery()
     layers_info = get_layers_info(model)
 
