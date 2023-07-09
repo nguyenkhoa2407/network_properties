@@ -2,6 +2,10 @@
 
 import copy
 import torch
+import sys
+sys.path.append('.')
+sys.path.append('..')
+
 from algorithms.decision_procedure import MarabouCoreDP
 from models.utils import attach_relu_activation_hook, turn_bool_activation_to_str
 

@@ -1,7 +1,7 @@
-import sys
 import torch
-
-sys.path.append('/Users/khoanguyen-cp/gmu/Marabou')
+import sys
+sys.path.append('.')
+sys.path.append('..')
 
 from maraboupy import MarabouCore
 from maraboupy.Marabou import createOptions

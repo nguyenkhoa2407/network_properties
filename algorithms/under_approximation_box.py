@@ -1,6 +1,8 @@
 import pulp 
 import torch
-import numpy as np
+import sys
+sys.path.append('.')
+sys.path.append('..')
 
 from models.utils import get_layers_info
 
